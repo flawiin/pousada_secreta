@@ -204,14 +204,13 @@
 }
 
 .sobre__card-title {
-  margin-bottom: 16px;
   font-weight: 600;
+  gap: 20px;
 }
 
 .sobre__cards-row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .sobre__card-imagem {
