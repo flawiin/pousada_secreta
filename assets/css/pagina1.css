@@ -198,7 +198,7 @@
 }
 
 .sobre__texto {
-  color: rgb(125, 124, 124);
+  color: #7d7c7c;
 }
 
 .sobre__cards {
@@ -266,6 +266,7 @@
   align-items: center;
   border-bottom: 1px solid #636363;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .footer__container {
@@ -276,7 +277,7 @@
 }
 
 .footer__titulo {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
