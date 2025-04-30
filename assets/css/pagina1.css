@@ -110,7 +110,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75%;
   max-width: 1200px;
   margin: 40px auto 150px auto;
 }
@@ -146,9 +145,7 @@
 
 .quartos__galeria figure {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  aspect-ratio: 3/2;
   width: calc((100% - 1.25rem) / 3);
-  flex: none;
 }
 
 .quartos__galeria figure:hover {
@@ -159,6 +156,7 @@
 .quartos__galeria img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 3/2;
   object-fit: cover;
 }
 
