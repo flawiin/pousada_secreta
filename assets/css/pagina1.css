@@ -130,15 +130,15 @@
 }
 
 .quartos__texto {
-  width: 100%;
-  line-height: 38px;
-  font-size: 1rem;
+  line-height: 1.4;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
   color: #6c6a6a;
   margin-bottom: 40px;
 }
 
 .quartos__galeria {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   gap: 1.25rem;
   width: 100%;
@@ -148,7 +148,7 @@
 
 .quartos__galeria figure {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: calc((100% - 1.25rem) / 3);
+  flex: 1 1 200px;
   aspect-ratio: 3/2;
   background-size: cover;
   background-position: center;
@@ -289,7 +289,7 @@
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   border-bottom: 1px solid #636363;
   padding: 20px;
@@ -297,10 +297,7 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width: 200px;
+  flex: 1 1 200px;
 }
 
 .footer__titulo {
