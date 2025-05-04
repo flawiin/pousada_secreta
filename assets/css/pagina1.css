@@ -131,7 +131,7 @@
 
 .quartos__texto {
   line-height: 1.4;
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: #6c6a6a;
   margin-bottom: 40px;
 }
@@ -195,6 +195,7 @@
 .rota__texto {
   margin-bottom: 32px;
   color: rgb(125, 124, 124);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .rota__mapa {
@@ -218,6 +219,7 @@
 
 .sobre__texto {
   color: #7d7c7c;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .sobre__cards {
