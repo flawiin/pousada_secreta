@@ -16,21 +16,23 @@
 * Cabeçalho fixo com logo e navegação
 */
 .header {
+  display: flex;
+  justify-content: center;
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 0;
   background-color: white;
+  
 }
 
 .header__container {
   width: 90%;
-  max-width: 1200px;
-  height: 50px;
+  max-width: 75rem; /* 1200px -> 75rem */
+  height: 3.125rem; /* 50px -> 3.125rem */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
 }
 
 .header__logo-link, header__logo-link:visited  {
@@ -73,34 +75,34 @@
 .capa {
   background-image: url("../img/img-fundo.jpg");
   width: 90%;
-  max-width: 1200px;
-  height: 600px;
+  max-width: 75rem; /* 1200px -> 75rem */
+  height: 37.5rem; /* 600px -> 37.5rem */
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
-  z-index: 2;
+  z-index: 1;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px -> 1.25rem */
 }
 
 .capa__container {
   background-color: rgba(47, 115, 80, 0.759);
   text-align: center;
-  padding: 60px 40px;
+  padding: 3.75rem 2.5rem; /* 60px 40px -> 3.75rem 2.5rem */
   border: 1px solid white;
 }
 
 .capa__title {
   color: white;
-  font-size: 52px;
+  font-size: 3.25rem; /* 52px -> 3.25rem */
   animation: fadeDown 1s ease forwards;
 }
 
 .capa__text {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px -> 1.5rem */
   font-weight: 400;
 }
 
@@ -111,8 +113,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 40px auto 150px auto;
+  max-width: 75rem; /* 1200px -> 75rem */
+  margin: 2.5rem auto 9.375rem auto; /* 40px auto 150px auto -> 2.5rem auto 9.375rem auto */
 }
 
 .quartos__container {
@@ -121,7 +123,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px -> 1.25rem */
 }
 
 .quartos__titulo {
@@ -143,12 +145,12 @@
   gap: 1.25rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px -> 1.25rem */
 }
 
 .quartos__galeria figure {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 200px;
+  flex: 1 1 12.5rem; /* 200px -> 12.5rem */
   aspect-ratio: 3/2;
   background-size: cover;
   background-position: center;
@@ -164,8 +166,8 @@
 }
 
 .quartos__galeria figcaption {
-  border-bottom: 2px solid #49997d;
-  padding: 15px 0;
+  border-bottom: 0.125rem solid #49997d; /* 2px -> 0.125rem */
+  padding: 0.9375rem 0; /* 15px -> 0.9375rem */
   background-color: white;
 }
 
@@ -182,10 +184,10 @@
 ---------------------------------------- */
 .rota {
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 3.25rem; /* 52px -> 3.25rem */
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto 52px auto;
+  max-width: 75rem; /* 1200px -> 75rem */
+  margin: 0 auto 3.25rem auto; /* 52px -> 3.25rem */
 }
 
 .rota__titulo {
@@ -200,7 +202,7 @@
 
 .rota__mapa {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px -> 75rem */
 }
 
 /* Sobre
@@ -208,8 +210,9 @@
 
 .sobre {
   width: 90%;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px -> 75rem */
   margin: 0 auto;
+  padding-bottom: 1.25rem;
 }
 
 .sobre__container {
@@ -226,18 +229,18 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 80px;
-  margin-bottom: 70px;
+  gap: 5rem; /* 80px -> 5rem */
+  margin-bottom: 4.375rem; /* 70px -> 4.375rem */
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px -> 75rem */
   margin: 0 auto;
 }
 
 .sobre__card {
   display: flex;
-  width: 500px;
-  height: 130px;
-  gap: 20px;
+  width: 31.25rem; /* 500px -> 31.25rem */
+  height: 8.125rem; /* 130px -> 8.125rem */
+  gap: 1.25rem; /* 20px -> 1.25rem */
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -257,7 +260,7 @@
 }
 
 .sobre__card-imagem {
-  width: 100px;
+  width: 6.25rem; /* 100px -> 6.25rem */
   aspect-ratio: 1/1;
   flex-shrink: 0;
 }
@@ -273,43 +276,42 @@
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem; /* 20px -> 1.25rem */
   align-items: center;
   justify-content: center;
   background-color: #49997d;
   color: white;
   width: 90%;
-  max-width: 1200px;
-  min-height: 170px;
+  max-width: 75rem; /* 1200px -> 75rem */
+  min-height: 10.625rem; /* 170px -> 10.625rem */
   height: auto;
-  padding: 20px 0;
+  padding: 1.25rem 0; /* 20px -> 1.25rem */
   margin: 0 auto;
 }
 
 .footer__content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px -> 75rem */
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem; /* 20px -> 1.25rem */
   align-items: center;
   border-bottom: 1px solid #636363;
-  padding: 20px;
+  padding: 1.25rem; /* 20px -> 1.25rem */
   flex-wrap: wrap;
 }
 
 .footer__container {
-  flex: 1 1 200px;
-}
-
-.footer__titulo {
-  font-size: 1.25rem;
-  font-weight: bold;
+  flex: 1 1 12.5rem; /* 200px -> 12.5rem */
 }
 
 .footer__link {
-  color: white;
   text-decoration: none;
+  color: #fff;
+}
+
+.footer__link:visited {
+  color: blueviolet;
 }
 
 @keyframes fadeDown {
@@ -338,4 +340,16 @@
 .sobre__titulo {
   margin-bottom: 16px;
   color: rgb(125, 124, 124);
+}
+
+@media (max-width: 900px) {
+  .capa {
+    height: 20rem; /* 320px -> 20rem */
+  }
+  .sobre__card {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 }
